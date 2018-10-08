@@ -2,7 +2,9 @@
 
 This is a boilerplate repo to get started with [zappa](https://github.com/Miserlou/Zappa) and jump off from where [these instructions](https://hackernoon.com/deploy-a-serverless-flask-application-on-aws-lambda-d8ca58af42a4) land (plus a little bit of debugging done for you).
 
-These files can be used to setup a basic docker image that can be used to create containers to deploy to
+These files can be used to setup a basic docker image that can be used to create containers to deploy to AWS.
+
+I'm using the [python:3.6-alpine](https://github.com/docker-library/python/blob/0c0365d804c2ef4ee8edef652e6a39cdf461e3b2/3.6/alpine3.8/Dockerfile) as a base image to keep things lightweight. The resulting image will be under 500MB.
 
 # Usage
 
