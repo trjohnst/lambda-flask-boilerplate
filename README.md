@@ -70,3 +70,6 @@ botocore.exceptions.ClientError: An error occurred (404) when calling the HeadBu
 
 Double check your credentials! It's likely the `aws/credential` credentials file that you created is not setup right.
 
+## Anything else
+
+If an error looks cryptic from the command line or from following the steps above, try using `zappa tail` from the python virtual environment or looking at AWS CloudWatch Logs.
