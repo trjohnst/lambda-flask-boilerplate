@@ -1,0 +1,10 @@
+{
+  "dev": {
+      "app_function": "main.app",
+      "aws_region": "<your region from aws/config>",
+      "profile_name": "<your profile from aws/credentials>",
+      "project_name": "main",
+      "runtime": "python3.6",
+      "s3_bucket": "main-zappa"
+  }
+}

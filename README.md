@@ -12,11 +12,15 @@ Add a `config` file and `credentials` file to the `aws` folder. You can refer to
 
 You can generate your own credentials after setting up an AWS account, going into your AWS console and following [these instructions](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys).
 
-## 2. Build the image
+## 2. Zappa Settings
+
+Modify the [zappa_settings.json](zappa_settings.json) file to include your region (matching the one from aws/config) and your profile (matching the one provided in aws/credentials).
+
+## 3. Build the image
 
 You can build the image simply with `docker build --rm -t lambda-flask .`
 
-## 3. Deploying in a container
+## 4. Deploying in a container
 
 ```bash
 # Run a container from the image
@@ -29,7 +33,7 @@ zappa deploy dev
 
 The end of the deployment will say `Deployment complete!` followed by a URL. You can navigate to the URL and verify that it says "Hello World!"
 
-## 4. Undeploying
+## 5. Undeploying
 
 Once you are done running your test, you should undeploy to clean up.
 
@@ -37,7 +41,7 @@ You can undeploy, while in the virtual environment, with `zappa undeploy` and hi
 
 I've also found that the S3 buckets stick around so you may want to delete the bucket that you created. You can find this bucket in your AWS console and it will correspond to the `s3_bucket` setting in [zappa_settings.json](zappa_settings.json).
 
-## 5. Exiting
+## 6. Exiting
 
 ```bash
 # Get out of the python virtual environment
