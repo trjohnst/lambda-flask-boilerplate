@@ -20,13 +20,13 @@ Modify the [zappa_settings.json](zappa_settings.json) file to include your regio
 
 ## 3. Build the image
 
-You can build the image simply with `docker build --rm -t lambda-flask .`
+You can build the image simply with `./build-docker.sh`
 
 ## 4. Deploying in a container
 
 ```bash
 # Run a container from the image
-docker run --rm -ti lambda-flask /bin/ash
+./run-docker.sh
 # Activate the pre-made python virtual environment (it has everything you need installed)
 source serverlessbot/bin/activate
 # Deploy your dev instance
