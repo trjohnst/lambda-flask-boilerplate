@@ -1,2 +1,2 @@
-Flask
-zappa
+Flask==1.0.2
+zappa==0.46.2
