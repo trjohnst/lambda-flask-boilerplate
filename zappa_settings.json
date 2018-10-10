@@ -1,6 +1,6 @@
 {
   "dev": {
-      "app_function": "main.app",
+      "app_function": "app.app",
       "aws_region": "<your region from aws/config>",
       "profile_name": "<your profile from aws/credentials>",
       "project_name": "main",
