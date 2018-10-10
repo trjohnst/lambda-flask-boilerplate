@@ -16,7 +16,7 @@ You can generate your own credentials after setting up an AWS account, going int
 
 ## 2. Zappa Settings
 
-Modify the [zappa_settings.json](zappa_settings.json) file to include your region (matching the one from aws/config) and your profile (matching the one provided in aws/credentials).
+Modify the [zappa_settings.json](zappa_settings.json) file to include your region (matching the one from aws/config) and your profile (matching the one provided in aws/credentials). The current file uses `us-west-1` (California) and `default` as specified in [the sample config](aws/sample_config).
 
 ## 3. Build the image
 
