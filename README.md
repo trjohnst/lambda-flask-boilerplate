@@ -68,7 +68,7 @@ Traceback (most recent call last):
 botocore.exceptions.ClientError: An error occurred (404) when calling the HeadBucket operation: Not Found
 ```
 
-Double check your credentials! It's likely the `aws/credential` credentials file that you created is not setup right.
+Double check your credentials! It's likely the `aws/credential` credentials file that you created is not setup right. For instance, having a different region in [zappa_settings.json](zappa_settings.json) from your `aws/config`.
 
 ## Anything else
 
